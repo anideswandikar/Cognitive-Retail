@@ -1,0 +1,21 @@
+﻿<Page
+    x:Class="CamDemo.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:CamDemo"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <Page.BottomAppBar>
+        <AppBar IsOpen="True" IsSticky="True">
+
+            <StackPanel Orientation="Horizontal">
+                <AppBarButton x:Name="captureBtn" Label="Start" Icon="Play"  Click="captureBtn_Click"></AppBarButton>
+                <AppBarButton x:Name="stopBtn" Label="Stop" Icon="Stop" Click="stopBtn_Click"></AppBarButton>
+            </StackPanel>
+        </AppBar>
+    </Page.BottomAppBar>
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Image Name="captureImage" HorizontalAlignment="Left" Height="503"  VerticalAlignment="Top" Width="360"/>
+    </Grid>
+</Page>
